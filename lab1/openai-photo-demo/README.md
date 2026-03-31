@@ -1,4 +1,4 @@
-# OpenAI & Hugging Face Classroom Demos
+# Api Exploration Classroom Demos
 
 ## 1. Project Name
 
