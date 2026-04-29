@@ -104,8 +104,6 @@ npm run test:all            # Run both unit and integration tests
 - 🔑 Requires OPENAI_API_KEY in .env
 - Validates actual API behavior
 
-📖 **Quick Start**: [QUICK_START_REAL_API_TESTS.md](QUICK_START_REAL_API_TESTS.md)
-📖 **Full Guide**: [REAL_API_TESTING.md](REAL_API_TESTING.md)
 
 ### Test Structure
 
@@ -146,9 +144,7 @@ test('should generate anime story', async () => {
 });
 ```
 
-For more details, see:
-- **[Test Guide](TEST_GUIDE.md)** - Complete testing reference
-- **[TDD Workflow](TDD_WORKFLOW.md)** - How to follow TDD
+
 
 ## How It Works
 
@@ -187,8 +183,6 @@ The system ensures vintage style through:
 1. **GPT-4 Prompt Engineering**: Instructs AI to create prompts emphasizing 1970s-1990s aesthetics
 2. **DALL-E Style Enhancement**: Appends specific vintage anime keywords to all image generations
 3. **Consistent Aesthetics**: All scenes maintain the same retro quality
-
-For detailed information, see **[VINTAGE_ANIME_STYLE.md](VINTAGE_ANIME_STYLE.md)**
 
 ## API Endpoints
 
