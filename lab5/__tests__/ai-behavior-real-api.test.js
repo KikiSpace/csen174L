@@ -205,7 +205,7 @@ Create the next scene. Respond in JSON:
   });
 
   describe('Full End-to-End Workflow', () => {
-    test.skip('should complete full scene generation workflow', async () => {
+    test('should complete full scene generation workflow', async () => {
       // Arrange
       const userPrompt = "A mecha pilot enters their robot for the first time";
 
