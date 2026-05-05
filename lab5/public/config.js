@@ -12,7 +12,7 @@ const CONFIG = {
 
   // Override for production (GitHub Pages)
   // Set this to your deployed backend URL (Render, Railway, Vercel, etc.)
-  PRODUCTION_API_URL: 'https://your-backend-app.onrender.com', // Change this!
+  PRODUCTION_API_URL: 'https://csen174l.onrender.com', // Change this!
 
   // Auto-detect environment
   getApiUrl() {
