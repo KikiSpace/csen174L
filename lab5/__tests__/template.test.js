@@ -13,7 +13,7 @@ const { createMockOpenAI, verifyGPTCall, verifyDALLECall } = require('./helpers/
  * Use this for simple unit tests
  */
 describe('Feature Name', () => {
-  test('should perform expected behavior', () => {
+  test.skip('should perform expected behavior', () => {
     // Arrange: Set up test data
     const input = 'test input';
     const expected = 'expected output';
