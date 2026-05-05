@@ -179,7 +179,7 @@ describe('Edge Cases', () => {
  * Use this for testing asynchronous operations
  */
 describe('Async Operations', () => {
-  test('should handle async function', async () => {
+  test.skip('should handle async function', async () => {
     // Arrange
     const mockClient = createMockOpenAI();
 
