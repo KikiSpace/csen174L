@@ -72,6 +72,27 @@ An interactive web application that uses AI to help you create anime story serie
    - Accept the suggestion or write your own
    - Continue building your anime series!
 
+## CI/CD
+
+This project uses **GitHub Actions** for continuous integration and automated testing.
+
+### Automated Testing
+Every push and pull request automatically:
+- Runs unit tests on Node.js 18.x and 20.x
+- Generates coverage reports
+- Checks for security vulnerabilities
+
+### GitHub Actions Workflow
+The CI/CD pipeline runs automatically when you push code or create a pull request. See [`.github/workflows/README.md`](.github/workflows/README.md) for detailed documentation.
+
+### Running Integration Tests on CI
+To trigger integration tests with real API calls (costs ~$0.10):
+```bash
+git commit -m "Your message [integration]"
+```
+
+**Note**: Requires `OPENAI_API_KEY` to be configured as a GitHub secret.
+
 ## Testing
 
 This project follows **Test-Driven Development (TDD)** practices.
