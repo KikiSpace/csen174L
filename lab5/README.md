@@ -1,6 +1,11 @@
 # Anime Story Generator
 
+[![Deploy to GitHub Pages](https://github.com/KikiSpace/csen174L/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/KikiSpace/csen174L/actions/workflows/deploy-pages.yml)
+[![CI/CD Pipeline](https://github.com/KikiSpace/csen174L/actions/workflows/ci.yml/badge.svg)](https://github.com/KikiSpace/csen174L/actions/workflows/ci.yml)
+
 An interactive web application that uses AI to help you create anime story series in **vintage Japanese anime style** (1970s-1990s). Users provide scene ideas, and the AI generates classic retro anime images with hand-drawn aesthetics and suggests story continuations, creating an evolving narrative series.
+
+**🌐 Live Demo**: [https://kikispace.github.io/csen174L/](https://kikispace.github.io/csen174L/) _(requires backend deployment)_
 
 ## Features
 
@@ -92,6 +97,38 @@ git commit -m "Your message [integration]"
 ```
 
 **Note**: Requires `OPENAI_API_KEY` to be configured as a GitHub secret.
+
+## Deployment
+
+### 🚀 Deploy to Production
+
+This app can be deployed with:
+- **Frontend**: GitHub Pages (free, static hosting)
+- **Backend**: Render, Railway, or Vercel (free tiers available)
+
+#### Quick Deployment Steps
+
+1. **Deploy Backend** (choose one):
+   - [Render](https://render.com) - Free tier with 750 hours/month
+   - [Railway](https://railway.app) - $5 credit/month
+   - [Vercel](https://vercel.com) - Free serverless functions
+
+2. **Configure Production API**:
+   ```javascript
+   // Edit public/config.js
+   PRODUCTION_API_URL: 'https://your-backend.onrender.com'
+   ```
+
+3. **Enable GitHub Pages**:
+   - Go to repository Settings → Pages
+   - Source: GitHub Actions
+   - Push changes to deploy automatically
+
+4. **Access Your App**:
+   - Frontend: `https://kikispace.github.io/csen174L/`
+   - Backend: `https://your-backend.onrender.com`
+
+📖 **Full deployment guide**: See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed step-by-step instructions.
 
 ## Testing
 

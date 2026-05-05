@@ -46,7 +46,7 @@ async function generateScene() {
     setLoadingState(true);
 
     try {
-        const response = await fetch('/api/generate-scene', {
+        const response = await fetch(`${API_BASE_URL}/api/generate-scene`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -170,12 +170,12 @@ function setLoadingState(isLoading) {
 // Check server health on load
 async function checkHealth() {
     try {
-        const response = await fetch('/api/health');
+        const response = await fetch(`${API_BASE_URL}/api/health`);
         const data = await response.json();
         console.log('Server status:', data);
     } catch (error) {
         console.error('Server connection failed:', error);
-        alert('Cannot connect to server. Please make sure the server is running.');
+        alert(`Cannot connect to server at ${API_BASE_URL}. Please make sure the server is running.`);
     }
 }
 
